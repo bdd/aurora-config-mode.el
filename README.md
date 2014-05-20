@@ -5,18 +5,16 @@ major mode for Emacs.
 
 Installation
 ------------
-GNU Emacs version 23 or later is supported.
+The mode is written and tested against GNU Emacs version 24 and may or may not
+work in earlier versions.
 
-Depending on the interest, we may post the package to ELPA and compatible
-repositories (e.g. MELPA, Marmalade).  For now the only supported way to install
-this mode is to it download `aurora-config.el` and add its path to your
-[`load-path`](http://www.emacswiki.org/emacs/LoadPath), followed by activating
-it for [autoloading](https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html)
+### Install the ELPA package from MELPA.
 
-```el
-(add-to-list 'load-path "/path/to/aurora-config.el")
-(require 'aurora-config)
-```
+`M-x package-install aurora-config-mode`
+
+### Download and install with `package.el` manually
+[Download](https://github.com/bdd/aurora-config.el/archive/master.zip) the
+HEAD of repository and install with `M-x package-install-file`.
 
 Commands
 --------
@@ -28,5 +26,5 @@ Provides side effect free Aurora client commands (currently `inspect' and
 
 Contributing
 ------------
-`aurora-config.el` lives at [http://github.com/bdd/autoload.el]().  Pull requests
-are most welcome.
+`aurora-config-mode.el` lives at [https://github.com/bdd/aurora-config-mode.el]().
+Pull requests are most welcome.

@@ -1,4 +1,4 @@
-;;; aurora-config.el --- Major mode for Aurora configuration files
+;;; aurora-config-mode.el --- Major mode or Apache Aurora configuration files
 
 ;; Copyright (c) 2014, Berk D. Demir
 
@@ -13,20 +13,14 @@
 ;;; Commentary:
 
 ;; Major mode for editing Apache Aurora configuration files.  It's derived from
-;; Python mode.
+;; Python mode adding Aurora and Pystachio helpers, structs and types for
+;; syntax coloring along with some Aurora inspection commands and key bindings.
 ;;
 ;; Provides side effect free Aurora client commands (currently `inspect' and
 ;; `diff') to test the results of changes.
 ;;
 ;; - C-c a i  runs `aurora inspect <jobpath> <config>' (`aurora-config-inspect')
 ;; - C-c a d  runs `aurora diff <jobpath> <config>' (`aurora-config-inspect')
-
-;;; Installation:
-
-;; Add this to your .emacs:
-
-;; (add-to-list 'load-path "/path/to/aurora-config.el")
-;; (require 'aurora-config)
 
 ;;; Code:
 (require 'python)
@@ -95,4 +89,4 @@
 
 (provide 'aurora-config-mode)
 
-;;; aurora-config.el ends here
+;;; aurora-config-mode.el ends here
