@@ -1,4 +1,4 @@
-;;; aurora-config-mode.el --- Major mode or Apache Aurora configuration files
+;;; aurora-config-mode.el --- Major mode for Apache Aurora configuration files
 
 ;; Copyright (c) 2014, Berk D. Demir
 
@@ -42,9 +42,9 @@
 
 (defvar aurora-config-last-job-path "smf1/")
 
-; Remember the last used job path from this buffer.
-; Although `read-string' will provide history in minibuffer, it's generally irrelevant
-; across different configuration files.
+;; Remember the last used job path from this buffer.
+;; Although `read-string' will provide history in minibuffer, it's generally irrelevant
+;; across different configuration files.
 (make-variable-buffer-local 'aurora-config-last-job-path)
 
 (defun aurora-config-read-jobpath ()
