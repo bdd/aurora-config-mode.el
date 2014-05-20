@@ -1,6 +1,5 @@
 Aurora Config Mode for Emacs
 ----------------------------
-
 This is the [Apache Aurora](https://aurora.incubator.apache.org/) configuration
 major mode for Emacs.
 
@@ -19,9 +18,15 @@ it for [autoloading](https://www.gnu.org/software/emacs/manual/html_node/elisp/A
 (require 'aurora-config)
 ```
 
+Commands
+--------
+Provides side effect free Aurora client commands (currently `inspect' and
+`diff') to test the results of changes.
+
+  - `C-c a i` runs `aurora inspect <jobpath> <config>` (invoking `aurora-config-inspect`)
+  - `C-c a d` runs `aurora diff <jobpath> <config>` (invoking `aurora-config-inspect`)
+
 Contributing
 ------------
 `aurora-config.el` lives at [http://github.com/bdd/autoload.el]().  Pull requests
 are most welcome.
-
-
