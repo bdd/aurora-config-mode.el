@@ -1,6 +1,7 @@
 ;;; aurora-config-mode.el --- Major mode for Apache Aurora configuration files
 
 ;; Copyright (c) 2014, Berk D. Demir
+;; License: BSD 2-Clause "Simplified"
 
 ;; Author: Berk D. Demir <bdd@mindcast.org>
 ;; URL: https://github.com/bdd/aurora-config.el
